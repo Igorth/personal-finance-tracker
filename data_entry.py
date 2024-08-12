@@ -40,5 +40,6 @@ def get_category():
     print("Invalid category. Please enter 'I' or 'E'.")
     return get_category()
 
+
 def get_description():
-    pass
+    return input("Enter a description (optional): ")
