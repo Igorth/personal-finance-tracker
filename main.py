@@ -70,4 +70,30 @@ def add():
     CSV.add_entry(date, amount, category, description)
 
 
-add()
+CSV.get_transactions("01-01-2024", "31-12-2024")
+
+
+def main():
+    while True:
+        print("\nFinance Tracker Menu:")
+        print("1. Add a new transaction")
+        print("2. View transactions within a specific date range")
+        print("3. Exit")
+        choice = input("Enter your choice: ")
+
+        if choice == "1":
+            add()
+        elif choice == "2":
+            start_date = get_date("Enter the start date (DD-MM-YYYY): ")
+            end_date = get_date("Enter the end date (DD-MM-YYYY): ")
+            df = CSV.get_transactions(start_date, end_date)
+        elif choice == "3":
+            print("Goodbye!")
+            break
+        else:
+            print("Invalid choice. Please try again.")
+
+
+# Run the main program when the script is executed directly
+if __name__ == "__main__":
+    main()
