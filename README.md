@@ -1,5 +1,7 @@
 # Finance Tracker CLI
 
+![Finance Tracker Demo](finance_tracker.gif)
+
 This is a simple finance tracking project that allows users to record and view financial transactions. The project stores data in a CSV file and provides functionalities to add new transactions and view transaction history within a specific date range.
 
 ## Features
