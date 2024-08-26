@@ -1,4 +1,7 @@
 # Finance Tracker CLI
+![Python](https://img.shields.io/badge/Python-3.9-blue.svg)
+![pandas](https://img.shields.io/badge/pandas-1.0+-yellow.svg)
+![matplotlib](https://img.shields.io/badge/matplotlib-3.0+-red.svg)
 
 ![Finance Tracker Demo](finance_tracker.gif)
 
@@ -13,7 +16,7 @@ This is a simple finance tracking project that allows users to record and view f
 
 ## Requirements
 
-- Python 3.x
+- Python 3.9
 - Python Libraries:
   - `pandas`
   - `matplotlib`
